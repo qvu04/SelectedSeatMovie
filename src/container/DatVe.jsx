@@ -16,13 +16,13 @@ export default function DatVe({ selectedSeat, handleDeleteSeat }) {
         })
     }
     return (
-        <div className='border p-5 w-full'>
+        <div className='border-2 border-yellow-400 p-5 w-full'>
             <h2 className='text-2xl font-bold text-white'>Danh sách ghế đã chọn:</h2>
             {selectedSeat.length === 0 ? (
                 <p className='text-white font-bold'>Chưa chọn ghế nào</p>
             ) : (
                 <div className='w-full'>
-                    <table className='w-full text-2xl'>
+                    <table className='w-full text-white text-2xl'>
                         <thead>
                             <tr>
                                 <th>Số ghế</th>
@@ -30,7 +30,7 @@ export default function DatVe({ selectedSeat, handleDeleteSeat }) {
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody className='text-white'>{renderDanhSach()}</tbody>
+                        <tbody className='text-yellow-500 border-white border-2'>{renderDanhSach()}</tbody>
                     </table>
                     <div className="mt-4 text-right text-lg font-bold">
                         Tổng tiền: <span className="text-red-500">{totalPrice.toLocaleString()} VND</span>

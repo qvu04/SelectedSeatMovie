@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className='flex'>
+      <div className='grid grid-cols-1 gap-2 p-4 2xl:grid-cols-2 '>
         <DanhSach selectedSeat={selectedSeat} handleSelectedSeat={handleSelectedSeat} />
         <DatVe selectedSeat={selectedSeat} handleDeleteSeat={handleDeleteSeat} />
       </div>
